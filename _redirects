@@ -1,0 +1,2 @@
+# Redirect domain aliases to primary domain
+https://alder.studio/* https://alder.world/:splat 301!
