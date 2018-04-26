@@ -1,0 +1,295 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Anonymous Pro', monospace;
+    line-height: 1.5em;
+    color: #272727;
+}
+
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: dodgerblue;
+    padding-bottom: .25em;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.night {
+    background-color: black;
+}
+
+.day {
+    background-color: white;
+}
+
+.full-row {
+    min-height: 100vh;
+}
+
+/* Typography */
+
+h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+
+/* Landing */
+
+.logo img {
+    max-width: 100px;
+    z-index: 1;
+}
+
+.logo:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    -webkit-transition: .25s;
+    /* Safari */
+    transition: .25s;
+}
+
+/* Navigation */
+
+.navigation {
+    position: fixed;
+    padding: 2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: ;
+}
+
+.navigation-simple {
+    padding: 1em 0;
+    position: fixed;
+}
+
+.nav-trigger {
+    background-color: transparent;
+    border: 0;
+}
+
+.nav-links {
+    text-align: right;
+}
+
+.nav-links-item:hover {
+    color: dodgerblue;
+}
+
+.nav-links-item {
+    margin-right: 1em;
+    color: black;
+}
+
+
+.nav-links-item:last-child {
+    margin-right: 0em !important;
+}
+
+
+.bar {
+    display: none;
+}
+
+/* Menu */
+
+.outside {
+    min-width: 100%;
+    height: 100%;
+    position: fixed;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    overflow: hidden;
+}
+
+.in {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: 0;
+    transition: 0;
+    z-index: 999;
+}
+
+.inside {
+    overflow: scroll;
+    height: 100%;
+    background: white;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+    -webkit-transition-delay: .35s;
+    transition-delay: .35s;
+}
+
+.in .inside {
+    border-radius: 0;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+/* Menu */
+
+.menu {
+    padding: 2em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    line-height: 2;
+}
+
+
+/* Forms */
+
+input,
+textarea {
+    outline: none;
+}
+
+p#warningName,
+p#warningEmail,
+p#warningComment {
+    color: red;
+}
+
+textarea[name=message] {
+    border: 2px solid black;
+    margin-top: 1em;
+    min-height: 30vh;
+    padding: 1em;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    border: 0px;
+    border-bottom: 2px solid black;
+    width: 100%;
+    height: 2em;
+    margin: 4px 0;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    border: none;
+    border-radius: none;
+    padding: 0;
+    font-size: 1em;
+}
+
+input:focus {
+    border: 0;
+    border-bottom: 2px solid dodgerblue;
+}
+
+
+textarea:focus {
+    border: 2px solid dodgerblue;
+}
+
+input[type=submit]:focus {
+    border: none;
+}
+
+::-webkit-input-placeholder {
+    color: #d4d4d4;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #d4d4d4;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #d4d4d4;
+}
+
+:-ms-input-placeholder {
+    color: #d4d4d4;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+button:hover {
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+/* background video */
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 150%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('/assets/images/404.gif') center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
+
+/* Social Icons */
+
+.social-icon {
+    width: 30px;
+}
+
+.social-icon:hover {
+    opacity: .2;
+}
