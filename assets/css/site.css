@@ -40,8 +40,19 @@ footer {
 }
 
 footer a {
-    text-align: center;
     color: white;
+}
+
+footer a:first-child {
+    text-align: left;
+}
+
+footer a:nth-child(2) {
+    text-align: right;
+}
+
+footer a:last-child {
+    text-align: right;
 }
 
 footer a:hover {
@@ -51,10 +62,6 @@ footer a:hover {
 @media only screen and (max-width: 600px) {
     footer a:first-child {
         display: none;
-    }
-    
-    footer a:nth-child(2) {
-        text-align: center;
     }
 
     footer a:last-child {
@@ -74,7 +81,7 @@ a:hover {
 }
 
 hr {
-    margin: 3em 0;
+    margin: 2em 0;
     opacity: .5;
 }
 
@@ -419,5 +426,5 @@ textarea:focus {
 }
 
 .navigation-popup-social-icons {
-    margin-top: 4em;
+    margin-top: 3em;
 }
