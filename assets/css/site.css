@@ -17,6 +17,13 @@ body {
     color: black;
 }
 
+::selection {
+    background: #E85133;
+}
+
+::-moz-selection {
+    background: #E85133;
+}
 
 img {
     width: 100%;
@@ -29,14 +36,7 @@ footer {
     position: absolute;
     bottom: 10px;
     width: 50%;
-}
-
-::selection {
-    background: #E85133;
-}
-
-::-moz-selection {
-    background: #E85133;
+    margin-top: 3em;
 }
 
 footer a {
@@ -48,13 +48,17 @@ footer a:hover {
     color: #E85133;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
     footer a:first-child {
-        text-align: left;
+        display: none;
+    }
+    
+    footer a:nth-child(2) {
+        text-align: center;
     }
 
     footer a:last-child {
-        text-align: right !important;
+        display: none;
     }
 }
 
@@ -253,6 +257,7 @@ textarea {
     outline: none;
     background-color: transparent;
     color: white;
+    resize: none;
 }
 
 p#warningName,
