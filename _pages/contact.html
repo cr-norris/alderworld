@@ -6,13 +6,17 @@ title: contact
 
 <div class="row full-row middle-xs">
     <div class="col-sm-6 col-xs-12">
-        
+
         <form name="contact" action="/confirmed/" netlify-honeypot="bot-field" method="POST" netlify>
             <p><label>Name<input required type="text" name="name"></label></p>
             <p><label>Email<input required type="email" name="email"></label></p>
             <p><label>Message<textarea required name="message"></textarea></label></p>
-            <p><button type="submit">Send</button></p>
+            <div class="upload-btn-wrapper">
+                <button class="btn">Add GIFs</button>
+                <input type="file" name="myfile" />
+            </div>
+            <button type="submit">Submit</button>
         </form>
-        
+
     </div>
 </div>

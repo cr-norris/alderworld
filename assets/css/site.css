@@ -299,7 +299,35 @@ textarea {
 
 }
 
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+}
+
+.btn {
+    border: none;
+    color: white;
+    background-color: transparent;
+    padding: 0;
+}
+
+.btn:hover {
+    color: #E85133;
+    cursor: pointer;
+}
+
+
+.upload-btn-wrapper input[type=file] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
 button[type=submit] {
+    float: right;
     border: none;
     border-radius: none;
     padding: 0;
