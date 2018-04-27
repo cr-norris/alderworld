@@ -16,6 +16,12 @@ body {
     line-height: 1.5em;
     color: black;
 }
+
+
+img {
+    width: 100%;
+}
+
 footer {
     width: 100% !important;
     color: white;
@@ -23,6 +29,14 @@ footer {
     position: absolute;
     bottom: 10px;
     width: 50%;
+}
+
+::selection {
+    background: #E85133;
+}
+
+::-moz-selection {
+    background: #E85133;
 }
 
 footer a {
@@ -34,20 +48,14 @@ footer a:hover {
     color: #E85133;
 }
 
-@media only screen and (min-width: 600px)  {
+@media only screen and (min-width: 600px) {
     footer a:first-child {
-    text-align: left;
-}
+        text-align: left;
+    }
 
     footer a:last-child {
-    text-align: right !important;
-}
-}
-
-
-
-img {
-    width: 100%;
+        text-align: right !important;
+    }
 }
 
 a {
@@ -101,7 +109,7 @@ h2 {
 .logo-left {
     max-width: 120px;
     -webkit-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;  
+    transition: all .1s ease-in-out;
 }
 
 .logo-left:hover {
@@ -111,7 +119,7 @@ h2 {
 .logo-center {
     z-index: 1;
     -webkit-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;  
+    transition: all .1s ease-in-out;
 }
 
 .logo-center:hover {
@@ -205,10 +213,7 @@ h2 {
     overflow: scroll;
     height: 100%;
     background: white;
-    -webkit-transition: all .1s
-    transition: all .1s
-    -webkit-transition-delay: .1s
-    transition-delay: .1s
+    -webkit-transition: all .1s transition: all .1s -webkit-transition-delay: .1s transition-delay: .1s
 }
 
 .in .inside {
@@ -316,7 +321,7 @@ input[type=submit]:focus {
 
 :hover {
     -webkit-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;  
+    transition: all .1s ease-in-out;
 }
 
 ::-webkit-input-placeholder {
