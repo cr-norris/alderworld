@@ -16,7 +16,33 @@ body {
     line-height: 1.5em;
     color: black;
 }
+footer {
+    width: 100% !important;
+    color: white;
+    font-size: .9em;
+    position: absolute;
+    bottom: 10px;
+    width: 50%;
+}
 
+.footer-center {
+    text-align: center;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.copyright-info {
+    padding: 1em;
+    font-size: .8em;
+    width: 100%;
+    text-align: left;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
 
 img {
     width: 100%;
@@ -24,16 +50,21 @@ img {
 
 a {
     text-decoration: none;
-    color: dodgerblue;
+    color: #E85133;
     padding-bottom: .25em;
 }
 
 a:hover {
     cursor: pointer;
+    color: black;
+}
+
+hr {
+    margin: 3em 0;
+    opacity: .5;
 }
 
 .wrapper {
-    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -57,19 +88,44 @@ h2 {
     line-height: 1.4em;
 }
 
-/* Landing */
-
-.logo img {
-    max-width: 100px;
-    z-index: 1;
+.helvetica {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: .02em;
 }
 
-.logo:hover {
+/* Landing */
+
+.logo-left {
+    max-width: 120px;
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;  
+}
+
+.logo-left:hover {
+    cursor: pointer;
+}
+
+.logo-center {
+    z-index: 1;
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;  
+}
+
+.logo-center:hover {
     cursor: pointer;
     transform: scale(1.05);
-    -webkit-transition: .25s;
-    /* Safari */
-    transition: .25s;
+}
+
+@keyframes logo-center {
+    0% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+    100% {
+        transform: scale(2.0);
+        -webkit-transform: scale(2.0);
+    }
 }
 
 /* Navigation */
@@ -95,12 +151,16 @@ h2 {
     border: 0;
 }
 
+.nav-trigger:hover {
+    cursor: pointer;
+}
+
 .nav-links {
     text-align: right;
 }
 
 .nav-links-item:hover {
-    color: dodgerblue;
+    color: #E85133;
 }
 
 .nav-links-item {
@@ -143,10 +203,10 @@ h2 {
     overflow: scroll;
     height: 100%;
     background: white;
-    -webkit-transition: all .35s;
-    transition: all .35s;
-    -webkit-transition-delay: .35s;
-    transition-delay: .35s;
+    -webkit-transition: all .1s
+    transition: all .1s
+    -webkit-transition-delay: .1s
+    transition-delay: .1s
 }
 
 .in .inside {
@@ -154,6 +214,12 @@ h2 {
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
 }
+
+.row.full-row.nav-trigger.close.is-showing {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
 
 /* Menu */
 
@@ -170,9 +236,16 @@ ul {
 
 /* Forms */
 
+label {
+    color: white;
+
+}
+
 input,
 textarea {
     outline: none;
+    background-color: transparent;
+    color: white;
 }
 
 p#warningName,
@@ -182,7 +255,7 @@ p#warningComment {
 }
 
 textarea[name=message] {
-    border: 2px solid black;
+    border: 2px solid white;
     margin-top: 1em;
     min-height: 30vh;
     padding: 1em;
@@ -192,12 +265,19 @@ input[type=text],
 input[type=email],
 textarea {
     border: 0px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     width: 100%;
     height: 2em;
     margin: 4px 0;
     font-size: 1em;
     box-sizing: border-box;
+    background-color: transparent;
+    outline: none !important;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+
 }
 
 button[type=submit] {
@@ -205,20 +285,36 @@ button[type=submit] {
     border-radius: none;
     padding: 0;
     font-size: 1em;
+    background-color: transparent;
+    color: white;
+}
+
+
+button:hover {
+    color: #E85133;
+    cursor: pointer;
 }
 
 input:focus {
     border: 0;
-    border-bottom: 2px solid dodgerblue;
+    border-bottom: 2px solid #E85133;
 }
 
-
 textarea:focus {
-    border: 2px solid dodgerblue;
+    border: 2px solid #E85133;
 }
 
 input[type=submit]:focus {
     border: none;
+}
+
+:focus {
+    outline: 0 !important;
+}
+
+:hover {
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;  
 }
 
 ::-webkit-input-placeholder {
@@ -239,13 +335,29 @@ input[type=submit]:focus {
     color: #d4d4d4;
 }
 
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px white inset;
+input:-webkit-autofill {}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    background-color: transparent !important;
+    -webkit-text-fill-color: white;
+    -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
-button:hover {
-    color: dodgerblue;
-    cursor: pointer;
+button[type=submit]:focus,
+textarea:focus {
+    border-bottom: 2px solid #E85133;
 }
 
 /* background video */
@@ -286,12 +398,12 @@ button:hover {
 
 /* Social Icons */
 
-.social-icon {
+.arena-icon {
     width: 30px;
 }
 
-.social-icon:hover {
-    opacity: .2;
+.arena-icon:hover {
+    content: url('/assets/images/arena-orange.svg');
 }
 
 .navigation-popup-social-icons {

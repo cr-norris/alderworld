@@ -1,25 +1,15 @@
 <!DOCTYPE html>
 <html>
+    
 {% include head.html %}
-
+    
 <body>
-    <div class="fullscreen-bg">
-        <video loop muted autoplay class="fullscreen-bg__video">
-            <source src="/assets/video.webm" type="video/webm">
-            <source src="/assets/video.mp4" type="video/mp4">
-        </video>
-    </div>
-
-    {% include navigation-popup.html %}
-
-    <div class="wrapper">
+    {% include navigation-simple-light.html %}
+    <div class="wrapper night">
         {{ content }}
     </div>
-
     <footer>
         {% include footer.html %}
     </footer>
-
 </body>
-
 </html>

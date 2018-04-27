@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
+    
 {% include head.html %}
-{% include navigation-simple.html %}
     
-    <body>
-        <div class="wrapper day">
-            {{ content }}
-        </div>
-    
+<body>
+    {% include navigation-simple.html %}
+    <div class="wrapper day">
+        {{ content }}
+    </div>
     <footer>
         {% include footer.html %}
     </footer>
-  
-    </body>
+</body>
 </html>
