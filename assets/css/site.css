@@ -25,24 +25,26 @@ footer {
     width: 50%;
 }
 
-.footer-center {
+footer a {
     text-align: center;
-}
-
-.footer-right {
-    text-align: right;
-}
-
-.copyright-info {
-    padding: 1em;
-    font-size: .8em;
-    width: 100%;
-    text-align: left;
     color: white;
-    position: fixed;
-    left: 0;
-    bottom: 0;
 }
+
+footer a:hover {
+    color: #E85133;
+}
+
+@media only screen and (min-width: 600px)  {
+    footer a:first-child {
+    text-align: left;
+}
+
+    footer a:last-child {
+    text-align: right !important;
+}
+}
+
+
 
 img {
     width: 100%;
