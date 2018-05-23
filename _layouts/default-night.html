@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
-    
+
 {% include head.html %}
-    
+
 <body>
     {% include navigation-popup.html %}
-    <div class="wrapper night">
-        {{ content }}
+    <div id="container" class="night">
+
+              <div class="col-xs-10 col-sm-9 row end-xs vertical-line"></div>
+        
+        <div class="wrapper">    
+            {{ content }}
+        </div>
+  
+        <footer>
+            {% include footer.html %}
+        </footer>
+
     </div>
-    <footer>
-        {% include footer.html %}
-    </footer>
+
 </body>
+
 </html>

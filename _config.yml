@@ -4,15 +4,21 @@ description: Alder is the Vermont studio of Jasmine Parsia and Chris Norris. We 
 baseurl: "/"
 url: "alder.world" 
 
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
-  
 collections:
   pages:
     output: true
     permalink: /:name/
+  projects:
+    output: true
+    permalink: /:collection/:name/
+  stories:
+    output: true
+    permalink: /:collection/:name/    
+
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed  
     
 include:
   - _redirects

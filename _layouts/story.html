@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    
+{% include head.html %}
+    
+<body>
+    {% include navigation-popup.html %}
+    <div class="wrapper day">
+            {% include navigation-day.html %}
+
+        <div class="row middle-xs">
+            <div class="col-xs-6">
+                <img src="/assets/images/moran.jpg">
+            </div>
+            <div class="col-xs-6">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+    <footer>
+        {% include footer.html %}
+    </footer>
+</body>
+</html>

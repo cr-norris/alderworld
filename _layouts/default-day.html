@@ -4,12 +4,14 @@
 {% include head.html %}
     
 <body>
-    {% include navigation-simple.html %}
+    {% include navigation-popup.html %}
+    <div id="container">
     <div class="wrapper day">
         {{ content }}
     </div>
     <footer>
         {% include footer.html %}
     </footer>
+    </div>
 </body>
 </html>

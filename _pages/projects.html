@@ -1,0 +1,34 @@
+--- 
+layout: default-day
+title: projects
+---
+{% include navigation-day.html %}
+
+<div class="row start-xs">
+    <p class="col-xs-4 helvetica meta"><b>Projects</b></p>
+    <p class="col-xs-4 helvetica meta"><b>Client</b></p>
+    <p class="col-xs-3 helvetica meta"><b>Categories</b></p>
+    <p class="col-xs-1 row end-xs helvetica meta"><b>Date</b></p>
+</div>
+
+<div class="row">
+
+    {% for project in site.projects %}
+    <a class="project row middle-xs start-xs" href="{{ project.url }}">
+        
+        <div class="project-title col-xs-4">{{ project.title }}</div>
+        
+        <div class="meta col-xs-4">{{ project.client }}</div>
+        
+        <div class="meta col-xs-3">{{ project.categories | join: ', ' }}</div>
+        
+        <div class="meta col-xs-1 row end-xs">{{ project.date | date: "%Y" }}</div>
+        
+        <div class="article-image hide">
+            <img class="project-image" src="{{ project.image }}">
+        </div>
+    </a>
+
+    {% endfor %}
+
+</div>
