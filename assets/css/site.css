@@ -103,6 +103,13 @@ hr {
 
 /* Typography */
 
+.headline-night {
+    font-size: 1.8em;
+    line-height: 1.4em;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.4em;
