@@ -5,20 +5,15 @@
     
 <body>
     {% include navigation-popup.html %}
+    <div id="container">
     <div class="wrapper day">
-            {% include navigation-day.html %}
+        {% include navigation-day.html %}
 
-        <div class="row middle-xs">
-            <div class="col-xs-6">
-                <img src="/assets/images/moran.jpg">
-            </div>
-            <div class="col-xs-6">
-                {{ content }}
-            </div>
-        </div>
+        {{ content }}
     </div>
     <footer>
         {% include footer.html %}
     </footer>
+    </div>
 </body>
 </html>
