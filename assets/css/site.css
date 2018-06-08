@@ -169,6 +169,10 @@ h2 {
     z-index: ;
 }
 
+.nav-body {
+    margin: 3em 0;
+}
+
 .navigation-simple {
     padding: 1em 0;
     position: fixed;
