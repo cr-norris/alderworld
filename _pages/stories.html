@@ -1,19 +1,20 @@
 --- 
 layout: default-day
-title: projects
+title: Stories
 ---
 
 {% include navigation-day.html %}
 
-<div class="row top-xs">
-
-    <div class="col-xs-12 col-sm-3">
+<div class="row quarter-row">
         <p>We can't write our <span class="helvetica"><b>stories</b></span> alone. </p>
-    </div>
-    
-    <div class=" stories col-xs-12 col-sm-9 row top-xs start-xs">
+
+</div>
+
+
+<div class="row start-xs">
+    <div class="stories row top-xs start-xs">
         {% for story in site.stories %}
-        <a class="story col-xs-6" href="{{ story.url }}">
+        <a class="story col-sm-4 col-xs-12" href="{{ story.url }}">
         <img class="story-image" src="{{ story.image }}">
         <div class="story-title">{{ story.title }}</div>
         <p class="story-excerpt meta">{{ story.excerpt }}</p>
