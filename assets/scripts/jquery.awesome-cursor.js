@@ -250,14 +250,14 @@
   // Expose the defaults so that users can override them if they want to
   $.fn.awesomeCursor.defaults = {
     color: '#000000',
-    size: 18,
+    size: 24,
     hotspot: [0, 0],
     flip: '',
     rotate: 0,
     outline: null,
     font: {
       family: 'FontAwesome',
-      cssClass: 'fa fa-%s'
+      cssClass: 'far fa-%s'
     }
   };
 });

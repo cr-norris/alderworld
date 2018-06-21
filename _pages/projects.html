@@ -7,9 +7,9 @@ title: Projects
 <div class="row">
     {% for project in site.projects %}
     <div class="project row middle-xs start-xs">
-        <div class="meta col-xs-4">{{ project.client }}</div>
+        <div class="col-xs-4">{{ project.client }}</div>
         <div class="project-title col-xs-6">{{ project.title }}</div>
-        <div class="meta col-xs-2 row end-xs">{{ project.year }}</div>
+        <div class="col-xs-2 row end-xs">{{ project.year }}</div>
         <div class="article-image  hide">
             <img class="project-image row middle-xs" src="{{ project.image }}">
         </div>
