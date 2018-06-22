@@ -1,17 +1,11 @@
 $(document).ready(function () {
-    
+
     $("body").awesomeCursor('circle', {
         color: '#E85133',
         hotspot: 'center',
         size: 55
     });
-    
-    $(".project").hover(function () {
-        $(this).mouseout('hide');
-        $('.article-image').eq($(this).index()).toggleClass('hide');
-    });
 
-    
 });
 
 $(".close").click(function () {
@@ -31,4 +25,8 @@ $('textarea').each(function () {
 }).on('input', function () {
     this.style.height = 'auto';
     this.style.height = (this.scrollHeight) + 'px';
+});
+
+$(".project").hover(function () {
+    $('.article-image').eq($(this).index()).toggleClass('hide');
 });
