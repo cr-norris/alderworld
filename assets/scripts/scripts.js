@@ -1,16 +1,17 @@
 $(document).ready(function () {
-
+    
     $("body").awesomeCursor('circle', {
         color: '#E85133',
         hotspot: 'center',
-        size: 70
+        size: 55
     });
-
+    
     $(".project").hover(function () {
         $(this).mouseout('hide');
         $('.article-image').eq($(this).index()).toggleClass('hide');
     });
 
+    
 });
 
 $(".close").click(function () {

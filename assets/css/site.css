@@ -7,6 +7,24 @@
     cursor: inherit;
 }
 
+:focus {
+    outline: 0 !important;
+}
+
+:hover {
+    -webkit-transition: all .02s ease-in-out;
+    transition: all .02s ease-in-out;
+}
+
+::selection {
+    background: #E85133;
+    opacity: 1;
+}
+
+::-moz-selection {
+    background: #E85133;
+}
+
 html,
 body {
     width: 100%;
@@ -26,14 +44,6 @@ body {
     position: relative;
 }
 
-::selection {
-    background: #E85133;
-    opacity: 1;
-}
-
-::-moz-selection {
-    background: #E85133;
-}
 
 img {
     width: 100%;
@@ -95,12 +105,17 @@ footer a:hover {
 
 a {
     text-decoration: none;
-    color: #E85133;
-    padding-bottom: .25em;
 }
 
 a:hover {
     cursor: inherit !important;
+    opacity: .1;
+}
+
+p a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    color: inherit;
 }
 
 hr {
@@ -198,6 +213,7 @@ h3 {
 
 .helvetica {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
     letter-spacing: .02em;
 }
 
@@ -205,20 +221,13 @@ h3 {
     font-weight: 900;
 }
 
-.meta {
+.meta p {
     opacity: .5;
-}
-
-.meta:hover {
-    opacity: 1;
 }
 
 .meta a {
     color: white;
-}
-
-.meta a:hover {
-    color: orangered;
+    opacity: 1 !important;
 }
 
 .headline-night {
@@ -451,7 +460,7 @@ input[type=text],
 input[type=email],
 textarea {
     border: 0px;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
     width: 100%;
     font-size: 1em;
     line-height: 1.5em;
@@ -462,12 +471,11 @@ textarea {
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
     -o-transition: all 0.30s ease-in-out;
-
 }
 
 textarea[name=message] {
     margin: 2em 0;
-    border: 2px solid white;
+    border: 1px solid white;
     min-height: 20vh;
 }
 
@@ -478,28 +486,10 @@ textarea[name=message] {
     float: left;
 }
 
-.btn {
-    border: none;
-    color: white;
-    background-color: transparent;
-    padding: 0;
-}
-
-.btn:hover {
-    color: #E85133;
-}
-
-
-.upload-btn-wrapper input[type=file] {
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-}
 
 button[type=submit] {
     float: left;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: none;
     padding: 1em;
     font-size: 1em;
@@ -507,29 +497,20 @@ button[type=submit] {
     color: white;
 }
 
-
 button:hover {
     color: #E85133;
-    border: 2px solid #E85133;
+    border: 1px solid #E85133;
+}
+
+button[type=submit]:focus,
+textarea:focus {
+    border: 1px solid #E85133;
 }
 
 input:focus {
-    border-bottom: 2px solid #E85133;
+    border-bottom: 1px solid #E85133;
 }
 
-
-input[type=submit]:focus {
-    border: 2px solid #E85133;
-}
-
-:focus {
-    outline: 0 !important;
-}
-
-:hover {
-    -webkit-transition: all .02s ease-in-out;
-    transition: all .02s ease-in-out;
-}
 
 ::-webkit-input-placeholder {
     color: #d4d4d4;
@@ -567,11 +548,6 @@ select:-webkit-autofill:focus {
     -webkit-text-fill-color: white;
     -webkit-box-shadow: 0 0 0px 1000px #000 inset;
     transition: background-color 5000s ease-in-out 0s;
-}
-
-button[type=submit]:focus,
-textarea:focus {
-    border: 2px solid #E85133;
 }
 
 /* background video */
@@ -724,7 +700,8 @@ textarea:focus {
 
 .article-image {
     position: fixed;
-    max-width: 40%;
+    pointer-events: none;
+    width: 100%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);

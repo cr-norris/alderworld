@@ -1,16 +1,15 @@
 --- 
-layout: default-day
+layout: day
 title: Projects
 ---
 {% include navigation-day.html %}
 
 <div class="row">
-    {% for project in site.projects %}
+    {% for project in site.data.projects %}
     <div class="project row middle-xs start-xs">
-        <div class="col-xs-4">{{ project.client }}</div>
-        <div class="project-title col-xs-6">{{ project.title }}</div>
-        <div class="col-xs-2 row end-xs">{{ project.year }}</div>
-        <div class="article-image  hide">
+        <div class="col-xs-6">{{ project.client }}</div>
+        <div class="col-xs-6 row end-xs">{{ project.title }}, {{ project.year }}</div>
+        <div class="article-image col-xs-12 col-sm-8 hide">
             <img class="project-image row middle-xs" src="{{ project.image }}">
         </div>
     </div>
