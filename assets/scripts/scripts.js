@@ -27,6 +27,9 @@ $('textarea').each(function () {
     this.style.height = (this.scrollHeight) + 'px';
 });
 
-$(".project").hover(function () {
-    $('.article-image').eq($(this).index()).toggleClass('hide');
+$(".project").mouseenter(function () {
+    $('.article-image').eq($(this).index()).removeClass('hide');
+    $(this).mouseleave(function () {
+    $('.article-image').addClass('hide');    
 });
+    });

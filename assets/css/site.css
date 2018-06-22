@@ -655,8 +655,8 @@ select:-webkit-autofill:focus {
 }
 
 .project:hover {
-    opacity: 1;
-}
+    background-color: whitesmoke;
+        }
 
 .project:first-child {
     border-top: 1px solid black;
