@@ -1,20 +1,21 @@
-<!DOCTYPE html>
-<html>
-    
-{% include head.html %}
-    
-<body>
-    {% include navigation-popup.html %}
-    <div id="container">
-        {% include navigation-day.html %}
-    <div class="wrapper day">
-        
+--- 
+layout: default
+---
 
-        {{ content }}
-    </div>
-    <footer>
-        {% include footer.html %}
-    </footer>
-    </div>
-</body>
-</html>
+{% include navigation-day.html %}
+
+<div class="wrapper day">
+    {{ content }}
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('.story-slider').unslider({
+            nav: false,
+            infinite: true,
+            autoplay: false,
+            dots: true, //  Display dot navigation
+            fluid: true //  Support responsive design. May break non-responsive designs
+        });
+    });
+</script>
