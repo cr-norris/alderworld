@@ -1,12 +1,22 @@
-$(document).ready(function () {
+// preloader
 
+$(window).on('load', function () {
+    $('#status').delay(1250).fadeOut();
+    $('#preloader').delay(1250).fadeOut('slow');
+    $('body').delay(1250).css({
+        'overflow': 'visible'
+    });
+});
+
+
+$(document).ready(function () {
     $("body").awesomeCursor('circle', {
         color: '#E85133',
         hotspot: 'center',
         size: 55
     });
-
 });
+
 
 $(".story").hover(function () {
     $('.story-card-image').eq($(this).index()).toggleClass('hide');
