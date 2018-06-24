@@ -64,10 +64,10 @@ footer {
     width: 100% !important;
     color: white;
     font-size: .9em;
-    position: absolute;
+    position: relative;
     bottom: 0px;
+    padding: 3em 0;
     align-items: center;
-    height: 10vh;
     max-height: 5em;
     min-height: 2em;
     display: flex;
@@ -117,6 +117,10 @@ p a {
     color: inherit;
 }
 
+p a:hover {
+    color: orangered;
+}
+
 hr {
     margin: 1em 0;
     border: .5px solid grey;
@@ -149,24 +153,28 @@ hr {
     min-height: 90vh;
 }
 
+.story-row {
+    min-height: 100vh;
+}
+
 .padded-row {
     padding: 6vh 0;
     max-width: 1440px;
     margin: 0 auto;
 }
 
+.back-row {
+    border-top: 1px solid black;
+    padding: 1em 0;
+    color: black;
+}
+
+.back-row:hover {
+    color: orangered !important;
+}
+
 .white-row {
     background-color: white;
-    color: black !important;
-}
-
-.grey-row {
-    background-color: whitesmoke;
-    color: black !important;
-}
-
-.black-row {
-    background-color: black;
     color: black !important;
 }
 
@@ -350,10 +358,6 @@ h3 {
 
 .nav-links-night {
     color: white !important;
-}
-
-.nav-links-item:hover {
-    color: #E85133;
 }
 
 .nav-links-day {
@@ -619,6 +623,11 @@ select:-webkit-autofill:focus {
     margin-right: 1em;
 }
 
+.back-label {
+    display: inline-block;
+    margin-left: .5em;
+}
+
 .menu-icon-close {
     width: 30px;
 }
@@ -637,7 +646,6 @@ select:-webkit-autofill:focus {
     }
 }
 
-
 /* Projects */
 
 .project {
@@ -651,12 +659,11 @@ select:-webkit-autofill:focus {
 }
 
 .project:hover {
-    background-color: whitesmoke;
+    color: #E85133;
 }
 
 .project:first-child {
     border-top: 1px solid black;
-    margin-top: 2em;
 }
 
 .project:last-child {
@@ -667,6 +674,23 @@ select:-webkit-autofill:focus {
     font-size: 1em;
     line-height: 2em;
 }
+
+.article-image {
+    position: fixed;
+    pointer-events: none;
+    max-width: 600px;
+    max-height: 100vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+img.project-image  {
+    height: 100%;
+    padding: 0;
+}
+
 
 /* Stories */
 
@@ -694,13 +718,18 @@ select:-webkit-autofill:focus {
 
 .story {
     color: black;
-    background-color: transparent;
+    background-image: none;
     position: relative;
     border: 1px solid black;
     margin-left: -1px;
     margin-bottom: -1px;
     box-sizing: border-box;
     border-right: none;
+    z-index: 3
+}
+
+.story:hover {
+    background-size: contain;
 }
 
 .story:last-child {
@@ -722,11 +751,6 @@ select:-webkit-autofill:focus {
     width: 100%;
 }
 
-.story:hover {
-    background-color: whitesmoke;
-    text-decoration: none;
-}
-
 .story:hover .story-readmore {
     color: orangered;
 }
@@ -736,6 +760,25 @@ select:-webkit-autofill:focus {
     font-size: 1em;
     line-height: 1em;
     font-weight: 600;
+    z-index: 1;
+}
+
+.story-excerpt {
+    z-index: 1;
+}
+
+.story-readmore {
+    z-index: 1;
+}
+
+.story-image {
+    position: absolute;
+    padding: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
 }
 
 .story-slider-text {
@@ -749,19 +792,10 @@ select:-webkit-autofill:focus {
 }
 
 .story-meta {
+    padding: 5em 0;
     border-top: 1px solid black;
+    min-height: 50vh;
 }
-
-.article-image {
-    position: fixed;
-    pointer-events: none;
-    width: 100%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
 
 .hide {
     display: none;

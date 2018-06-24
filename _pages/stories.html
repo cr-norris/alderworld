@@ -8,7 +8,7 @@ title: Stories
 
 <div class="stories">
     {% for story in site.stories %}
-    <a href="{{ story.url }}" class="story">
+    <a href="{{ story.url }}" class="story">                    <img src="{{ story.image }}" class="story-image hide">
         <div class="story-content row top-xs start-xs">
             <div class="story-title">
                 <p>{{ story.title }}</p>

@@ -64,14 +64,16 @@
 .unslider-arrow {
     position: absolute;
     font-size: 1.5em;
-    left: 20px;
+    left: 0;
+    padding: 1em;
     z-index: 2;
     cursor: inherit;
 }
 
 .unslider-arrow.next {
     left: auto;
-    right: 20px;
+    right: 0;
+    padding: 1em;
 }
 
 .unslider-nav ol {

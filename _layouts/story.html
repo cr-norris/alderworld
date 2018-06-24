@@ -2,18 +2,42 @@
 layout: default
 ---
 
-{% include navigation-day.html %}
+{% include navigation-day-fixed.html %}
 
 <div class="wrapper day">
-    {{ content }}
+
+    <div class="row story-row">
+        <div class="story-slider unslider">
+            {{ content }}
+        </div>
+        <a href="#meta" class="more-info"><i class="fa fa-plus"></i></a>
+    </div>
+    
+    <a name="meta" class="row middle-xs start-xs story-meta">
+        <div class="row top-xs">
+        <div class="row start-xs col-xs-6">
+            <span class="helvetica">About</span>
+            <p>A {{ page.year }} collaboration with {{ page.client }}. {{ page.about }}</p>
+        </div>
+        <div class="row start-xs col-xs-6">
+            <span class="helvetica">Services</span>
+            <p>{{ page.categories | join:', ' }}</p>
+        </div>
+        </div>    
+    </a>
+    <a class="row back-row middle-xs col-xs-12" href="/stories/">
+        <i class="fa fa-eye"></i><p class="back-label helvetica">More Stories</p>
+    </a>
 </div>
 
 <script>
     $(document).ready(function() {
         $('.story-slider').unslider({
-            nav: false,
+            nav: true,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
+            speed: 1000,
+            delay: 15000,
             dots: true, //  Display dot navigation
             fluid: true //  Support responsive design. May break non-responsive designs
         });

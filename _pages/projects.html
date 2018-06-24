@@ -9,11 +9,16 @@ title: Projects
     <div class="project row middle-xs ">
         <div class="row start-xs col-xs-12 col-sm-6">{{ project.client }}</div>
         <div class="row start-xs col-xs-12 end-sm col-sm-6">{{ project.title }}, {{ project.year }}</div>
-        <div class="article-image col-xs-12 col-sm-8 hide">
-            <img class="project-image row middle-xs" src="{{ project.image }}">
+        <div class="article-image hide">
+            <img class="project-image" src="{{ project.image }}">  
         </div>
     </div>
-
     {% endfor %}
-  
+</div>
+
+<div class="row half-row">
+    <div class="col-xs-12 row">
+        <div class="row"><p>Looking for more? Check out our <a href="/stories/" class="helvetica">stories.</a></p></div>
+        <div class="row">Or we can work together.</div>
+    </div>
 </div>
