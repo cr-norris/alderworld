@@ -342,10 +342,12 @@ h3 {
 
 .navigation {
     z-index: 9999999;
+    padding: 1em 0;
 }
 
 .navigation-fixed {
     position: absolute;
+    padding: 1em 0;    
 }
 
 .nav-trigger {
