@@ -6,13 +6,13 @@ title: Projects
 
 <div class="row">
     {% for project in site.data.projects %}
-    <a href="{{ project.permalink }}" class="project row middle-xs">
+    <div class="project row middle-xs">
         <div class="row start-xs col-xs-12 col-sm-6">{{ project.client }}</div>
         <div class="row start-xs col-xs-12 end-sm col-sm-6">{{ project.title }}, {{ project.year }}</div>
         <div class="article-image hide">
             <img class="project-image" src="{{ project.image }}">  
         </div>
-    </a>
+    </div>
     {% endfor %}
 </div>
 
