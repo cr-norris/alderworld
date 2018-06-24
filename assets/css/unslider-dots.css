@@ -1,17 +1,20 @@
 nav.unslider-nav {
     position: absolute;
-    margin: 45vh auto 0;
+    margin: 47vh auto 0;
     left: 0;
-    padding: 1.1em;
+    padding: 1em;
+    z-index: 9999;
+    cursor: crosshair;
 }
 
 .more-info {
     position: absolute;
-    margin: 45vh auto 0;
+    margin: 47vh auto 0;
     font-size: 1.2em;
     padding: 1em;
     right: 0;
     color: #E85133;
+    z-index: 9999;
 }
 
 .unslider-nav ol {
@@ -28,9 +31,8 @@ nav.unslider-nav {
   overflow: hidden;
   text-indent: -999em;
   background: #E1E1E1;
-  cursor: pointer;
 }
 .unslider-nav ol li.unslider-active {
   background: #E85133;
-  cursor: default;
+  cursor: crosshair;    
 }

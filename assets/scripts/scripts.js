@@ -9,7 +9,7 @@ $(document).ready(function () {
 });
 
 $(".story").hover(function () {
-    $('.story-image').eq($(this).index()).toggleClass('hide');
+    $('.story-card-image').eq($(this).index()).toggleClass('hide');
 });
 
 

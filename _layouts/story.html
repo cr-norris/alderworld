@@ -12,20 +12,20 @@ layout: default
         </div>
         <a href="#meta" class="more-info"><i class="fa fa-plus"></i></a>
     </div>
-    
+
     <a name="meta" class="row middle-xs start-xs story-meta">
         <div class="row top-xs">
             <div class="col-xs-12"><span class="helvetica"><p>About</p></span>
-</div>
-        <div class="row start-xs col-xs-6">
-            {{ page.about }}
+            </div>
+            <div class="row start-xs col-xs-6">
+                {{ page.about }}
+            </div>
+            <div class="row start-xs col-xs-5 col-xs-offset-1">
+                <div class="col-xs-12"><span class="orange">Year:</span> {{ page.year }}</div>
+                <div class="col-xs-12"><span class="orange">Client:</span> {{ page.client }}</div>
+                <div class="col-xs-12"><span class="orange">Services:</span> {{ page.categories | join:', ' }}</div>
+            </div>
         </div>
-        <div class="row start-xs col-xs-5 col-xs-offset-1">
-            <div class="col-xs-12">Year: {{ page.year }}</div>
-            <div class="col-xs-12">Client: {{ page.client }}</div>
-            <div class="col-xs-12">Service: {{ page.categories | join:', ' }}</div>
-        </div>
-        </div>    
     </a>
     <a class="row back-row middle-xs col-xs-12" href="/stories/">
         <i class="fa fa-eye"></i><p class="back-label helvetica">More Stories</p>
@@ -37,7 +37,7 @@ layout: default
         $('.story-slider').unslider({
             nav: true,
             infinite: true,
-            autoplay: true,
+            autoplay: false,
             speed: 1000,
             delay: 15000,
             dots: true, //  Display dot navigation
