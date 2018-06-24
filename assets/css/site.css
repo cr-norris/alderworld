@@ -612,10 +612,28 @@ select:-webkit-autofill:focus {
     padding: 1em;
 }
 
-/* Social Icons */
+/*  Icons */
 
 .menu-icon {
     width: 30px;
+}
+
+.social-icons {
+    margin-top: 2em;
+    font-size: 1.5em;
+}
+
+.social-icon {
+    padding: .5em;
+    color: white;    
+}
+
+.social-icon:hover {
+    color: #E85133;
+}
+
+.social-icon:first-child {
+    padding-left: 0;
 }
 
 .menu-label {
@@ -636,9 +654,6 @@ select:-webkit-autofill:focus {
     margin-top: 3em;
 }
 
-.social-links {
-    margin: 2em 0;
-}
 
 @media (max-width: 767px) {
     .menu-label {
