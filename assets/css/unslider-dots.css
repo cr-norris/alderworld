@@ -27,10 +27,10 @@ nav.unslider-nav {
   border-radius: 2em;
   overflow: hidden;
   text-indent: -999em;
-  background: grey;
+  background: #E1E1E1;
   cursor: pointer;
 }
 .unslider-nav ol li.unslider-active {
-  background: black;
+  background: #E85133;
   cursor: default;
 }
