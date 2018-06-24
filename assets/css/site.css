@@ -460,6 +460,7 @@ input[type=text],
 input[type=email],
 textarea {
     border: 0px;
+    padding-left: 0;
     border-bottom: 1px solid white;
     width: 100%;
     font-size: 1em;
@@ -620,7 +621,6 @@ select:-webkit-autofill:focus {
 
 .social-icons {
     margin-top: 2em;
-    font-size: 1.5em;
 }
 
 .social-icon {
