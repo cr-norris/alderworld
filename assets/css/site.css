@@ -837,6 +837,7 @@ li.row {
 
 li.row img {
     max-width: 1000px;
+    max-height: 80vh;
 }
 
 .story-card-image {
