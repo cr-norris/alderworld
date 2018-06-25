@@ -1,9 +1,9 @@
 // preloader
 
 $(window).on('load', function () {
-    $('#status').delay(1250).fadeOut();
-    $('#preloader').delay(1250).fadeOut('slow');
-    $('body').delay(1250).css({
+    $('#status').delay(1000).fadeOut();
+    $('#preloader').delay(1000).fadeOut('slow');
+    $('body').delay(1000).css({
         'overflow': 'visible'
     });
 });

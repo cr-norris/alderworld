@@ -367,13 +367,14 @@ h3 {
 }
 
 .navigation {
-    z-index: 9999999;
+    z-index: 9;
     height: 10vh;
 }
 
-.navigation-fixed {
+.navigation-story {
     position: absolute;
-    padding: 1em 0;    
+    padding: 1em 0;
+    z-index: 9;
 }
 
 .nav-trigger {
@@ -838,6 +839,7 @@ li.row {
 li.row img {
     max-width: 1000px;
     max-height: 80vh;
+    width: auto !important;
 }
 
 .story-card-image {
