@@ -1,20 +1,20 @@
 nav.unslider-nav {
     position: absolute;
-    margin: 47vh auto 0;
+    margin: 48vh auto 0;
     left: 0;
     padding: 1em;
-    z-index: 9999;
+    z-index: 99;
     cursor: crosshair;
 }
 
 .more-info {
     position: absolute;
-    margin: 47vh auto 0;
+    margin: 48vh auto 0;
     font-size: 1.2em;
     padding: 1em;
     right: 0;
     color: #E85133;
-    z-index: 9999;
+    z-index: 99;
 }
 
 .unslider-nav ol {
@@ -28,10 +28,12 @@ nav.unslider-nav {
   margin: 0 .25em;
   background: transparent;
   border-radius: 2em;
+  border-color: transparent;
   overflow: hidden;
   text-indent: -999em;
   background: #E1E1E1;
 }
+
 .unslider-nav ol li.unslider-active {
   background: #E85133;
   cursor: crosshair;    

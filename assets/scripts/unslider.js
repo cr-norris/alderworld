@@ -167,7 +167,7 @@
 
 		self.setup = function() {
 			//  Add a CSS hook to the main element
-			self.$context.addClass(self.prefix + self.options.animation).wrap('<div class="' + self._ + ' row half-row middle-xs" />');
+			self.$context.addClass(self.prefix + self.options.animation).wrap('<div class="' + self._ + ' row" />');
 			self.$parent = self.$context.parent('.' + self._);
 
 			//  We need to manually check if the container is absolutely

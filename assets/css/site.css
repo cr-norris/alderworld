@@ -48,6 +48,7 @@ body {
     -webkit-animation: rainbow 1s ease infinite;
     animation: rainbow 1s ease infinite;
     z-index: 100;
+    z-index: 99999999;
 }
 
 #status {
@@ -367,7 +368,7 @@ h3 {
 
 .navigation {
     z-index: 9999999;
-    padding: 1em 0;
+    height: 10vh;
 }
 
 .navigation-fixed {
@@ -752,7 +753,7 @@ img.project-image  {
     z-index: -2;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .stories {
         grid-template-columns: repeat(1, 100vw);
         grid-template-rows: 100vw;
@@ -764,7 +765,7 @@ img.project-image  {
         grid-template-columns: repeat(3, 33.33333vw);
         grid-template-rows: 33.33333vw;
     }
-}
+} */
 
 .story {
     color: black;
@@ -821,13 +822,21 @@ img.project-image  {
     z-index: 1;
 }
 
+.slider {
+    height: 100vh;
+}
+
 li.row {
     padding: 0 3.5em !important;
     text-align: center;
+    height: 90vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 li.row img {
-    margin: 2em 0;
+    max-width: 1000px;
 }
 
 .story-card-image {
