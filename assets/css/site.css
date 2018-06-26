@@ -727,6 +727,10 @@ select:-webkit-autofill:focus {
     line-height: 2em;
 }
 
+.article-image-container {
+
+}
+
 .article-image {
     position: fixed;
     pointer-events: none;
@@ -740,6 +744,7 @@ select:-webkit-autofill:focus {
 
 img.project-image  {
     height: 100%;
+    max-height: 100vh;
     padding: 0;
 }
 
@@ -754,14 +759,14 @@ img.project-image  {
     z-index: -2;
 }
 
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
     .stories {
         grid-template-columns: repeat(1, 100vw);
         grid-template-rows: 100vw;
     }
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .stories {
         grid-template-columns: repeat(3, 33.33333vw);
         grid-template-rows: 33.33333vw;

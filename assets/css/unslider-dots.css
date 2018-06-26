@@ -1,6 +1,6 @@
 nav.unslider-nav {
     position: absolute;
-    margin: 48vh auto 0;
+    margin: 46vh auto 0;
     left: 0;
     padding: 1em;
     z-index: 99;
@@ -9,8 +9,8 @@ nav.unslider-nav {
 
 .more-info {
     position: absolute;
-    margin: 48vh auto 0;
-    font-size: 1.2em;
+    margin: 46vh auto 0;
+    font-size: 1.4em;
     padding: 1em;
     right: 0;
     color: #E85133;
