@@ -18,16 +18,14 @@ layout: default
 
     <a name="meta" class="row middle-xs start-xs story-meta">
         <div class="row top-xs">
-            <div class="col-xs-12"><span class="helvetica"><p>About</p></span>
-            </div>
             <div class="row start-xs col-xs-12 col-sm-6">
-                {{ page.about }}
+                {{ page.about | markdownify }}
             </div>
-            <ul class="col-xs-12 col-sm-5 col-sm-offset-1">
-                <li><span class="orange">Year:</span> {{ page.year }}</p>
-                <li><span class="orange">Client:</span> {{ page.client }}</p>
-                <li><span class="orange">Services:</span> {{ page.categories | join:', ' }}</p>
-            </ul>
+            <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+                <p><span class="orange">Year:</span> {{ page.year }}</p>
+                <p><span class="orange">Client:</span> {{ page.client }}</p>
+                <p><span class="orange">Services:</span> {{ page.categories | join:', ' }}</p>
+            </div>
         </div>
     </a>
     <a class="row back-row middle-xs col-xs-12" href="/stories/">

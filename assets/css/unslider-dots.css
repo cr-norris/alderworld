@@ -21,6 +21,7 @@ nav.unslider-nav {
   list-style: none;
   text-align: center;
 }
+
 .unslider-nav ol li {
   display: inline-block;
   width: .85em;
@@ -31,7 +32,7 @@ nav.unslider-nav {
   border-color: transparent;
   overflow: hidden;
   text-indent: -999em;
-  background: #E1E1E1;
+  background: rgba(0,0,0,0.10);
 }
 
 .unslider-nav ol li.unslider-active {
