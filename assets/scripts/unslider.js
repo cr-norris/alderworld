@@ -180,7 +180,7 @@
 				self.$context.css('position', 'relative');
 			}
 
-			self.$context.css('overflow', 'scroll');
+			self.$context.css('overflow', 'hidden');
 		};
 
 		//  Set up the slide widths to animate with
