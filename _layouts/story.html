@@ -20,14 +20,14 @@ layout: default
         <div class="row top-xs">
             <div class="col-xs-12"><span class="helvetica"><p>About</p></span>
             </div>
-            <div class="row start-xs col-xs-6">
+            <div class="row start-xs col-xs-12 col-sm-6">
                 {{ page.about }}
             </div>
-            <div class="row start-xs col-xs-5 col-xs-offset-1">
-                <div class="col-xs-12"><span class="orange">Year:</span> {{ page.year }}</div>
-                <div class="col-xs-12"><span class="orange">Client:</span> {{ page.client }}</div>
-                <div class="col-xs-12"><span class="orange">Services:</span> {{ page.categories | join:', ' }}</div>
-            </div>
+            <ul class="col-xs-12 col-sm-5 col-sm-offset-1">
+                <li><span class="orange">Year:</span> {{ page.year }}</p>
+                <li><span class="orange">Client:</span> {{ page.client }}</p>
+                <li><span class="orange">Services:</span> {{ page.categories | join:', ' }}</p>
+            </ul>
         </div>
     </a>
     <a class="row back-row middle-xs col-xs-12" href="/stories/">
