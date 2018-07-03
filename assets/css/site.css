@@ -196,10 +196,6 @@ hr {
     color: black;
 }
 
-.back-row:hover {
-    color: orangered !important;
-}
-
 .white-row {
     background-color: white;
     color: black !important;
@@ -677,6 +673,10 @@ select:-webkit-autofill:focus {
     margin-right: 1em;
 }
 
+.nav-trigger:hover {
+    color: orangered !important;
+}
+
 .back-label {
     display: inline-block;
     margin-left: .5em;
@@ -847,7 +847,7 @@ li.row img {
     width: auto !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 960px) {
     li.row {
         padding: 0 !important;
         text-align: left;
@@ -898,6 +898,7 @@ li.row img {
 
 
 .story-card-image {
+    display: block;
     position: absolute;
     padding: 0;
     top: 0;
