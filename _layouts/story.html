@@ -26,33 +26,17 @@ layout: default
                 <p><span class="orange">Services:</span> {{ page.categories | join:', ' }}</p>
             </div>
         </div>
+    <i class="fas fa-circle col-xs-12 story-ending"></i>    
     </a>
-    <div class="row back-row start-xs col-xs-12">
-        <p class="back-label helvetica">More Stories</p>
+    <div class="row">
+    {% for story in site.stories %}
+    <a class="project row middle-xs" href="{{ story.url }}">
+        <div class="row start-xs col-xs-10">{{ story.title }}</div>
+        <div class="row end-xs col-xs-2"><i class="fa fa-arrow-right"></i></div>
+    </a>
+    {% endfor %}
     </div>
-    <div class="stories">
-        {% for story in site.stories %}
-        <a href="{{ story.url }}" class="story">                    
-        <img src="{{ story.image }}" class="story-card-image hide">
-        <div class="story-content row top-xs start-xs">
-            <div class="story-title">
-                <p>{{ story.title }}</p>
-            </div>
-        </div>
-        <div class="story-content row middle-xs start-xs">
-            <div class="story-excerpt">
-                <p>{{ story.excerpt }}</p>
-            </div>
-        </div>
-        <div class="story-content row bottom-xs start">
-            <div class="story-readmore row between-xs">
-                <p>Read More</p>
-                <i class="far fa-arrow-right"></i> 
-            </div>
-        </div>
-        </a> 
-        {% endfor %}
-    </div>
+
 </div>
 <script>
     $(document).ready(function() {

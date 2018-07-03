@@ -893,9 +893,8 @@ li.row img {
     
     .story-video {
         padding: .5em 0;
+    }
 }
-}
-
 
 .story-card-image {
     display: block;
@@ -937,6 +936,11 @@ li.row img {
     padding: 5em 0;
     border-top: 1px solid black;
     min-height: 50vh;
+}
+
+.story-ending {
+    margin-top: 3em;
+    color: orangered;
 }
 
 .hide {
