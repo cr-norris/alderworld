@@ -1,8 +1,9 @@
 title: Alderworld®
 email: hello@alder.studio
-description: Alder is the Vermont studio of Jasmine Parsia and Chris Norris. We are a multidisciplenary design duo generalizing in graphic design, creative direction, production, web design. 
+description: A multi-disciplinary graphic design studio connecting art, enviroment, culutre and technology.
 baseurl: "/"
 url: "alder.world" 
+image: "/assets/images/alder-social.png"
 
 collections:
   pages:

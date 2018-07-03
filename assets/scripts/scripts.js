@@ -8,7 +8,6 @@ $(window).on('load', function () {
     });
 });
 
-
 $(document).ready(function () {
     $("body").awesomeCursor('circle', {
         color: '#E85133',
@@ -16,7 +15,6 @@ $(document).ready(function () {
         size: 55
     });
 });
-
 
 $(".story").hover(function () {
     $('.story-card-image').eq($(this).index()).toggleClass('hide');
@@ -50,7 +48,10 @@ $(".project").mouseenter(function () {
 });
 
 
- // Select all links with hashes
+//Animate Page Anchor Scrolling
+
+
+// Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')

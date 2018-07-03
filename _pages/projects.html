@@ -3,7 +3,6 @@ layout: day
 title: Projects
 ---
 
-
 {% include navigation-day.html %}
 
 <div class="row">
@@ -12,12 +11,11 @@ title: Projects
         <div class="row start-xs col-xs-12 col-sm-6">{{ project.client }}</div>
         <div class="row start-xs col-xs-12 end-sm col-sm-6">{{ project.title }}, {{ project.year }}</div>
         <div class="article-image hide">
-            <img class="project-image" src="{{ project.image }}">
+            <img class="project-image lazy" data-src="{{ project.image }}">
         </div>
     </div>
     {% endfor %}
 </div>
-
 <div class="row half-row">
     <div class="col-xs-12 row">
         <div class="row">
@@ -25,3 +23,8 @@ title: Projects
         </div>
     </div>
 </div>
+<script>
+    $(function() {
+        $('.lazy').Lazy();
+    });
+</script>
