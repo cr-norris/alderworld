@@ -50,5 +50,22 @@
 <!---JQuery--->      
     
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>   
+
+<script>
+    $(function() {
+    var canvas = document.createElement("canvas");
+    canvas.width = 60;
+    canvas.height = 60;
+    //document.body.appendChild(canvas);
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#000000";
+    ctx.font = "60px FontAwesome";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText("\uf111", 30, 30);
+    var dataURL = canvas.toDataURL('image/png')
+    $('body').css('cursor', 'url('+dataURL+'), auto');
+});
+</script>
     
 </head>

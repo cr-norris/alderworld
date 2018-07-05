@@ -257,7 +257,7 @@
     outline: null,
     font: {
       family: 'FontAwesome',
-      cssClass: 'far fa-%s'
+      cssClass: 'fa fa-%s'
     }
   };
 });
