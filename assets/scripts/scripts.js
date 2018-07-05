@@ -1,3 +1,13 @@
+// cursor
+
+$(document).ready(function () {
+    $("body").awesomeCursor('circle', {
+        color: '#E85133',
+        hotspot: 'center',
+        size: 55
+    });
+});
+
 // preloader
 
 $(window).on('load', function () {
