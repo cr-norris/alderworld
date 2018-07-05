@@ -1,6 +1,6 @@
 // cursor
 
-$(document).ready(function () {
+$(window).on('load', function () {
     $('html').awesomeCursor('circle', {
         color: '#E85133',
         hotspot: 'center',
