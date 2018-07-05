@@ -8,14 +8,6 @@ $(window).on('load', function () {
     });
 });
 
-$(document).ready(function () {
-    $("body").awesomeCursor('circle', {
-        color: '#E85133',
-        hotspot: 'center',
-        size: 55
-    });
-});
-
 $(".story").hover(function () {
     $('.story-card-image').eq($(this).index()).toggleClass('hide');
 });

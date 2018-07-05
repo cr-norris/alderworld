@@ -256,7 +256,7 @@
     rotate: 0,
     outline: null,
     font: {
-      family: 'FontAwesome',
+      family: "FontAwesome",
       cssClass: 'fa fa-%s'
     }
   };
