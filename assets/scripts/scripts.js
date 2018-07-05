@@ -1,7 +1,7 @@
 // cursor
 
 $(document).ready(function () {
-    $("body").awesomeCursor('circle', {
+    $('html').awesomeCursor('circle', {
         color: '#E85133',
         hotspot: 'center',
         size: 55
