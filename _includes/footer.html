@@ -1,30 +1,10 @@
-<script>
-$(function() {
-    var canvas = document.createElement("canvas");
-    canvas.width = 24;
-    canvas.height = 24;
-    //document.body.appendChild(canvas);
-    var ctx = canvas.getContext("2d");
-    ctx.fillStyle = "#000000";
-    ctx.font = "24px FontAwesome";
-    ctx.textAlign = "center";
-    ctx.textBaseline = "middle";
-    ctx.fillText("\uf002", 12, 12);
-    var dataURL = canvas.toDataURL('image/png')
-    $('body').css('cursor', 'url('+dataURL+'), auto');
-});
-</script>
-
 <div class="row col-xs-12 bottom-xs between-xs">
     <a href="{{ site.baseurl }}" class="helvetica">©Alder 2018</a>
     <a href="/projects">Projects</a>
     <a href="/stories">Stories</a>
     <a href="/studio">Studio</a>
 </div>
-
+<script src="{{ site.baseurl }}assets/scripts/jquery.awesome-cursor.js" type="text/javascript"></script>
 <script src="{{ site.baseurl }}assets/scripts/scripts.js" type="text/javascript"></script>
 <script src="{{ site.baseurl }}assets/scripts/unslider.js"></script>
-<!---<script src="{{ site.baseurl }}assets/scripts/jquery.awesome-cursor.js" type="text/javascript"></script>--->
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-                
