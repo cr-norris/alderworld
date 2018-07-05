@@ -32,7 +32,7 @@
 <!---Fonts--->   
     
 <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
-<link rel="stylesheet" href="{{ site.baseurl }}assets/css/fontawesome.css" type="text/css">
+<link rel="stylesheet" href="/assets/css/fontawesome.css" type="text/css">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-87DrmpqHRiY8hPLIr7ByqhPIywuSsjuQAfMXAE0sMUpY3BM7nXjf+mLIUSvhDArs" crossorigin="anonymous">    
 
 <!---Analytics--->     
@@ -49,23 +49,6 @@
 
 <!---JQuery--->      
     
-<script src="https://code.jquery.com/jquery-latest.min.js"></script>   
-
-<script>
-    $(function() {
-    var canvas = document.createElement("canvas");
-    canvas.width = 60;
-    canvas.height = 60;
-    //document.body.appendChild(canvas);
-    var ctx = canvas.getContext("2d");
-    ctx.fillStyle = "#000000";
-    ctx.font = "60px Font Awesome 5 Pro";
-    ctx.textAlign = "center";
-    ctx.textBaseline = "middle";
-    ctx.fillText("\uf111", 30, 30);
-    var dataURL = canvas.toDataURL('image/png')
-    $('body').css('cursor', 'url('+dataURL+'), auto');
-});
-</script>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
     
 </head>
