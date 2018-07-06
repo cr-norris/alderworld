@@ -228,13 +228,11 @@ hr {
 
 /* Typography */
 
-<<<<<<< HEAD
 .headline-night {
     font-size: 1.8em;
     line-height: 1.2em;
     font-weight: bold;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-=======
 @media only screen and (max-width: 48em) {
     .headline-night {
         font-size: 2em !important;
@@ -245,7 +243,6 @@ h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 3em;
     line-height: 1em;
->>>>>>> staging
 }
 
 h2 {
@@ -433,16 +430,12 @@ h3 {
     height: 10vh;
 }
 
-<<<<<<< HEAD
 .nav-body {
     margin: 3em 0;
 }
 
-.navigation-simple {
-=======
 .navigation-story {
     position: absolute;
->>>>>>> staging
     padding: 1em 0;
     z-index: 9;
 }
