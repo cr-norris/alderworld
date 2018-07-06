@@ -714,6 +714,14 @@ select:-webkit-autofill:focus {
 
 /* Projects */
 
+.collaborator:after {
+    content: ',';
+}
+
+.collaborator:last-child:after {
+    content: none !important;
+}
+
 .project {
     display: flex;
     opacity: 1;

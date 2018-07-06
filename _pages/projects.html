@@ -19,10 +19,9 @@ title: Projects
 <div class="row half-row">
     <div class="col-xs-12 col-sm-7 row start-xs">
         <p>It takes a village. We've been fortunate to build an incredible network of collaborators, these projects wouldn’t have been possible without them. Awesome humans:<p>
+        
         {% for collaborator in site.data.collaborators %}
-        <a href="{{ collaborator.website }}" target="_blank">
-            {{ collaborator.name }},
-        </a>
+        <a class="collaborator helvetica" href="{{ collaborator.website }}" target="_blank">{{ collaborator.name }}</a>
         {% endfor %}
     </div>
 </div>
