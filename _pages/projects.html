@@ -1,0 +1,28 @@
+--- 
+layout: day
+title: Projects
+---
+
+{% include navigation-day.html %}
+
+<div class="row">
+    {% for project in site.data.projects %}
+    <div class="project row middle-xs">
+        <div class="row start-xs col-xs-12 col-sm-6">{{ project.client }}</div>
+        <div class="row start-xs col-xs-12 end-sm col-sm-6">{{ project.title }}, {{ project.year }}</div>
+        <div class="article-image hide">
+            <img class="project-image" src="{{ project.image }}">
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<div class="row half-row">
+    <div class="col-xs-12 col-sm-7 row start-xs">
+        <p>It takes a village. We've been fortunate to build an incredible network of collaborators, these projects wouldn’t have been possible without them. Awesome humans:<p>
+        {% for collaborator in site.data.collaborators %}
+        <a href="{{ collaborator.website }}" target="_blank">
+            {{ collaborator.name }},
+        </a>
+        {% endfor %}
+    </div>
+</div>

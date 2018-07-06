@@ -3,28 +3,45 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>{{ site.title }}</title>
     
-<meta name="description" content="{{ site.description }}">
-    
+<title>{{ site.title }} / {{ page.title | camelcase }}</title> 
+<meta name="description" content="{{ site.description }}">   
 <link rel="icon" href="{{ site.baseurl }}assets/images/favicon.png" sizes="16x16" type="image/png">
 
-<meta property="og:title" content="{{ site.description }}">
-<meta property="og:description" content="{{ site.description }}">
-<meta property="og:url" content="http://alder.world">
-
-<link rel="stylesheet" href="{{ site.baseurl }}assets/css/site.css" type="text/css">
+<!---Social--->     
     
+<meta property="og:title" content="{{ site.title }} / {{ page.title | camelcase }}">
+<meta property="og:image" content="{{ site.image }}">
+<meta property="og:description" content="{{ site.description }}">  
+<meta property="og:url" content="http://alder.world">
+    
+<meta name="twitter:title" content="{{ site.title }} / {{ page.title | camelcase }}">
+<meta name="twitter:description" content="{{ site.image }}">
+<meta name="twitter:image" content="{{ site.description }}">
+    
+<meta property="og:site_name" content="{{ site.title }} / {{ page.title | camelcase }}">
+<meta name="twitter:image:alt" content="{{ site.description }}">      
+<!---Styles--->     
+    
+<link rel="stylesheet" href="{{ site.baseurl }}assets/css/site.css" type="text/css">
 <link rel="stylesheet" href="{{ site.baseurl }}assets/css/flexboxgrid.css" type="text/css">
+<link rel="stylesheet" href="{{ site.baseurl }}assets/css/unslider.css" type="text/css">
+<link rel="stylesheet" href="{{ site.baseurl }}assets/css/unslider-dots.css" type="text/css">    
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<!---Fonts--->   
     
 <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
+<<<<<<< HEAD
     
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-oi8o31xSQq8S0RpBcb4FaLB8LJi9AT8oIdmS1QldR8Ui7KUQjNAnDlJjp55Ba8FG" crossorigin="anonymous">
+=======
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-87DrmpqHRiY8hPLIr7ByqhPIywuSsjuQAfMXAE0sMUpY3BM7nXjf+mLIUSvhDArs" crossorigin="anonymous">
+
+<!---Analytics--->     
+>>>>>>> staging
     
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77575154-2"></script>
+    
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -33,4 +50,8 @@
   gtag('config', 'UA-77575154-2');
 </script>
 
+<!---JQuery--->      
+    
+<script src="https://code.jquery.com/jquery-latest.min.js"></script> 
+   
 </head>
