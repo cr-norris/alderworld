@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>menu-icon-night</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="menu-icon-night" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10,0 L30,0 L30,20 L10,20 L10,0 Z M20,25 L20,30 L0,30 L0,10 L5,10 L5,5 L10,5 L10,8 L8,8 L8,22 L22,22 L22,20 L25,20 L25,25 L20,25 Z M17,25 L5,25 L5,13 L3,13 L3,27 L17,27 L17,25 Z M13,3 L27,3 L27,17 L13,17 L13,3 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+    </g>
+</svg>

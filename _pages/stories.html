@@ -1,0 +1,36 @@
+--- 
+layout: day
+title: Stories
+---
+
+{% include navigation-day.html %}
+
+
+
+
+<div class="stories">
+    {% assign items = site.stories | sort: 'order' %}
+    {% assign story = items %}
+    {% for story in items %}
+    <a href="{{ story.url }}" class="story">                    
+        <img src="{{ story.image }}" class="story-card-image   hide"/>
+        <div class="story-content row top-xs start-xs">
+            <div class="story-title">
+                <p>{{ story.title }}</p>
+            </div>
+        </div>
+
+        <div class="story-content row middle-xs start-xs">
+            <div class="story-excerpt">
+                <p>{{ story.excerpt }}</p>
+            </div>
+        </div>
+        <div class="story-content row bottom-xs start">
+            <div class="story-readmore row between-xs">
+                <p>Read More</p>
+                <i class="far fa-arrow-right"></i> 
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
