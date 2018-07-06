@@ -739,12 +739,9 @@ select:-webkit-autofill:focus {
     line-height: 2em;
 }
 
-.article-image-container {}
-
 .article-image {
     position: fixed;
     pointer-events: none;
-    max-width: 600px;
     max-height: 100vh;
     left: 50%;
     top: 50%;
@@ -753,8 +750,9 @@ select:-webkit-autofill:focus {
 }
 
 img.project-image {
-    height: 100%;
+    height: auto;
     max-height: 100vh;
+    max-width: 800px;
     width: auto;
     padding: 0;
 }
