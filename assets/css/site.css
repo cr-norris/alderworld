@@ -755,7 +755,19 @@ select:-webkit-autofill:focus {
 img.project-image {
     height: 100%;
     max-height: 100vh;
+    width: auto;
     padding: 0;
+}
+
+@media (max-width: 767px) {
+    .article-image {
+            width: 100%;
+    }
+    img.project-image {
+        width: inherit;
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 
