@@ -641,60 +641,6 @@ select:-webkit-autofill:focus {
     transition: background-color 5000s ease-in-out 0s;
 }
 
-/* background video */
-
-.fullscreen-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
-}
-
-.halfscreen-bg {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
-}
-
-.fullscreen-bg__video {
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    width: auto;
-    height: auto;
-    min-width: 150%;
-    min-height: 100%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.halfscreen-bg__video {
-    position: absolute;
-    z-index: -1;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-@media (max-width: 767px) {
-    .fullscreen-bg {
-        background: url('/assets/images/mobile-fallback.png') center center / cover no-repeat;
-    }
-
-    .fullscreen-bg__video {
-        display: none;
-    }
-}
 
 /* Background Color */
 
@@ -1035,8 +981,6 @@ video {
     height: 100%;
 }
 
-/* No object-fit support: */
-
 @media (min-aspect-ratio: 16 / 9) {
     #video > video {
         height: 300%;
@@ -1050,8 +994,6 @@ video {
         left: -100%;
     }
 }
-
-/* 2. If supporting object-fit, overriding (1): */
 
 @supports (object-fit: cover) {
     #video > video {
