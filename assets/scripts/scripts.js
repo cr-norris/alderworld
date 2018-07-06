@@ -1,57 +1,40 @@
-// preloader
-
-$(window).load(function () {
-    $('body').awesomeCursor('circle', {
-        color: '#E85133',
-        hotspot: 'center',
-        size: 55
-    });
-    
+$(document).ready(function () {   
     $('#status').delay(1000).fadeOut();
     $('#preloader').delay(1000).fadeOut('slow');
     $('body').delay(1000).css({
         'overflow': 'visible'
     });
-    
-});
 
-// cursor
+    $(".story").hover(function () {
+        $('.story-card-image').eq($(this).index()).toggleClass('hide');
+    });
 
-$(window).load(function () {
+    $(".close").click(function () {
+        $('.outside').toggleClass('in');
+        $(this).toggleClass('is-showing');
+    });
 
-});
+    $(".hidden-content").hide();
+    $(".show_hide").click(function () {
+        var txt = $(".hidden-content").is(':visible') ? 'Read More' : 'Read Less';
+        $(".show_hide").text(txt);
+        $(".hidden-content").slideToggle();
+    });
 
-$(".story").hover(function () {
-    $('.story-card-image').eq($(this).index()).toggleClass('hide');
-});
+    $('textarea').each(function () {
+        this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
+    }).on('input', function () {
+        this.style.height = 'auto';
+        this.style.height = (this.scrollHeight) + 'px';
+    });
 
-
-$(".close").click(function () {
-    $('.outside').toggleClass('in');
-    $(this).toggleClass('is-showing');
-});
-
-$(".hidden-content").hide();
-$(".show_hide").click(function () {
-    var txt = $(".hidden-content").is(':visible') ? 'Read More' : 'Read Less';
-    $(".show_hide").text(txt);
-    $(".hidden-content").slideToggle();
-});
-
-$('textarea').each(function () {
-    this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
-}).on('input', function () {
-    this.style.height = 'auto';
-    this.style.height = (this.scrollHeight) + 'px';
-});
-
-$(".project").mouseenter(function () {
-    $('.article-image').eq($(this).index()).removeClass('hide');
-    $(this).mouseleave(function () {
-        $('.article-image').addClass('hide');
+    $(".project").mouseenter(function () {
+        $('.article-image').eq($(this).index()).removeClass('hide');
+        $(this).mouseleave(function () {
+            $('.article-image').addClass('hide');
+        });
     });
 });
-
 
 //Animate Page Anchor Scrolling
 

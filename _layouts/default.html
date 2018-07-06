@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
-    
+
 {% include head.html %}
-    
+
 <body>
     {% include navigation-popup.html %}
     <div id="container">
 
         {{ content }}
 
-    <footer>
-        {% include footer.html %}
-    </footer>
+        <footer>
+            {% include footer.html %}
+        </footer>
     </div>
+    <script>
+setTimeout(function(){
+    $('body').awesomeCursor('circle', {
+                color: 'orangered',
+                size: '64',
+                hotspot: 'center'
+            });
+}, 5000);
+    </script>
 </body>
+
 </html>
