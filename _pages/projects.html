@@ -11,7 +11,7 @@ title: Projects
         <div class="row start-xs col-xs-12 col-sm-6">{{ project.client }}</div>
         <div class="row start-xs col-xs-12 end-sm col-sm-6">{{ project.title }}, {{ project.year }}</div>
         <div class="article-image hide">
-            <img class="project-image  " src="{{ project.image }}">
+            <img class="project-image" src="{{ project.image }}">
         </div>
     </div>
     {% endfor %}
@@ -24,8 +24,3 @@ title: Projects
         {% endfor %}
     </div>
 </div>
-<script>
-    $(function() {
-        $('.lazy').Lazy();
-    });
-</script>

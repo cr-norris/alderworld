@@ -7,15 +7,18 @@
     <div id="container">
         {{ content }}
     </div>
+
+<!---    
     <script>
-        setTimeout(function() {
+        $(document).ready(function() {
             $('body').awesomeCursor('circle', {
                 color: 'orangered',
                 size: '64',
                 hotspot: 'center'
             });
-        }, 5000);
+        });
     </script>
+--->
     <footer>
         {% include footer.html %}
     </footer>

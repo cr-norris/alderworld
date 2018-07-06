@@ -35,6 +35,7 @@ body {
     font-family: 'Anonymous Pro', monospace;
     line-height: 1.5em;
     color: black;
+    cursor: url("/assets/cursor.svg") 30 30, auto;;
 }
 
 #preloader {
