@@ -108,7 +108,7 @@ hr {
     line-height: 1.2em;
     font-weight: bold;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-<<<<<<< HEAD
+
 @media only screen and (max-width: 48em) {
     .headline-night {
         font-size: 2em !important;
@@ -119,8 +119,8 @@ h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 3em;
     line-height: 1em;
-=======
->>>>>>> parent of e7f6aad... Merge branch 'staging'
+
+
 }
 
 h2 {
@@ -186,12 +186,12 @@ h2 {
     margin: 3em 0;
 }
 
-<<<<<<< HEAD
+
 .navigation-story {
     position: absolute;
-=======
+
 .navigation-simple {
->>>>>>> parent of e7f6aad... Merge branch 'staging'
+
     padding: 1em 0;
     position: fixed;
 }
