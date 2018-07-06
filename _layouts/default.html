@@ -1,27 +1,16 @@
 <!DOCTYPE html>
 <html>
+    
 {% include head.html %}
-
+    
 <body>
     {% include navigation-popup.html %}
-    <div id="container">
+    {% include navigation-simple-light.html %}
+    <div class="wrapper night">
         {{ content }}
     </div>
-
-<!---    
-    <script>
-        $(document).ready(function() {
-            $('body').awesomeCursor('circle', {
-                color: 'orangered',
-                size: '64',
-                hotspot: 'center'
-            });
-        });
-    </script>
---->
     <footer>
         {% include footer.html %}
     </footer>
 </body>
-
 </html>
