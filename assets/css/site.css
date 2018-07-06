@@ -17,7 +17,7 @@
 }
 
 ::selection {
-    background: #E85133;
+    background: transparent;
     opacity: 1;
 }
 
@@ -35,7 +35,7 @@ body {
     font-family: 'Anonymous Pro', monospace;
     line-height: 1.5em;
     color: black;
-    cursor: url("/assets/cursor.svg") 30 30, auto;;
+    cursor: url("/assets/cursor.svg") 22.5 22.5, auto !important;
 }
 
 #preloader {
@@ -53,15 +53,15 @@ body {
 }
 
 #status {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  background-image: url(/assets/world.gif);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: -100px 0 0 -100px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(/assets/world.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
 }
 
 #container {
@@ -73,7 +73,7 @@ body {
 
 img {
     width: 100%;
-    padding: 0;    
+    padding: 0;
 }
 
 
@@ -103,18 +103,16 @@ footer {
 
 footer a {
     color: white;
+    text-align: right;
 }
 
 footer a:first-child {
     text-align: left;
 }
 
-footer a:nth-child(2) {
-    text-align: center;
-}
-
 footer a:last-child {
-    text-align: right;
+    display: none;
+    text-align: center;
 }
 
 footer a:hover {
@@ -122,12 +120,15 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 48em) {
-    footer a:nth-child(2) {
+    footer a:nth-child(1),
+    footer a:nth-child(2),
+    footer a:nth-child(3),
+    footer a:nth-child(4) {
         display: none;
     }
 
-    footer a:nth-child(3) {
-        display: none;
+    footer a:last-child {
+        display: block;
     }
 }
 
@@ -216,7 +217,6 @@ hr {
     .quarter-row,
     .half-row,
     .full-row {
-        border-bottom: 1px solid white;
         border-top: 1px solid white;
     }
 }
@@ -227,6 +227,12 @@ hr {
 }
 
 /* Typography */
+
+@media only screen and (max-width: 48em) {
+    .headline-night {
+        font-size: 2em !important;
+    }
+}
 
 h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -251,6 +257,10 @@ h3 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 900;
     letter-spacing: .02em;
+}
+
+.transparent {
+    opacity: .35;
 }
 
 .orange {
@@ -312,6 +322,51 @@ h3 {
 
 /* Landing */
 
+#splash-footer {
+    background-color: transparent;
+    width: 100% !important;
+    color: white;
+    position: fixed;
+    border-top: 1px solid white;
+    bottom: 0px;
+    padding: 2em 0;
+    align-items: center;
+    max-height: 5em;
+    min-height: 2em;
+    display: flex;
+}
+
+#splash-footer a {
+    color: white;
+    text-align: right;
+}
+
+#splash-footer a:first-child {
+    text-align: left;
+}
+
+#splash-footer a:last-child {
+    display: none;
+    text-align: center;
+}
+
+#splash-footer a:hover {
+    opacity: .8;
+}
+
+@media only screen and (max-width: 48em) {
+    #splash-footer a:nth-child(1),
+    #splash-footer a:nth-child(2),
+    #splash-footer a:nth-child(3),
+    #splash-footer a:nth-child(4) {
+        display: none;
+    }
+
+    #splash-footer a:last-child {
+        display: block;
+    }
+}
+
 .logo-left {
     max-width: 120px;
     -webkit-transition: all .1s ease-in-out;
@@ -321,6 +376,8 @@ h3 {
 .logo-left:hover {}
 
 .logo-center {
+    height: 4em;
+    width: auto;
     z-index: 1;
     -webkit-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
@@ -455,7 +512,7 @@ ul {
     list-style: none;
     list-style-type: none;
     padding: 0;
-    -webkit-margin-before: 0 !important;    
+    -webkit-margin-before: 0 !important;
 }
 
 li {
@@ -658,11 +715,11 @@ select:-webkit-autofill:focus {
 
 .social-icon {
     padding: .5em;
-    color: white;    
+    color: white;
 }
 
 .social-icon:hover {
-    color: #E85133;
+    opacity: .35;
 }
 
 .social-icon:first-child {
@@ -674,7 +731,7 @@ select:-webkit-autofill:focus {
     margin-right: 1em;
 }
 
-.nav-trigger:hover {
+.nav-trigger:hover > i.far {
     color: orangered !important;
 }
 
@@ -697,6 +754,16 @@ select:-webkit-autofill:focus {
     .menu-label {
         display: none;
     }
+    .popupnav-link {
+        font-size: 3em;
+        line-height: 1.3em;
+    }
+}
+
+.arena-icon {
+    height: 2em;
+    width: auto;
+    padding-top: .35em;
 }
 
 /* Projects */
@@ -719,17 +786,14 @@ select:-webkit-autofill:focus {
     border-top: 1px solid black;
 }
 
-.project:last-child {
-}
+.project:last-child {}
 
 .project-title {
     font-size: 1em;
     line-height: 2em;
 }
 
-.article-image-container {
-
-}
+.article-image-container {}
 
 .article-image {
     position: fixed;
@@ -742,7 +806,7 @@ select:-webkit-autofill:focus {
     z-index: 1;
 }
 
-img.project-image  {
+img.project-image {
     height: 100%;
     max-height: 100vh;
     padding: 0;
@@ -771,7 +835,7 @@ img.project-image  {
         grid-template-columns: repeat(3, 33.33333vw);
         grid-template-rows: 33.33333vw;
     }
-} 
+}
 
 .story {
     color: black;
@@ -890,7 +954,7 @@ li.row img {
     .story-card-image {
         display: none;
     }
-    
+
     .story-video {
         padding: .5em 0;
     }
@@ -946,3 +1010,54 @@ li.row img {
 .hide {
     display: none !important;
 }
+
+/* Video */
+
+video {
+    object-fit: fill;
+}
+
+#video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* No object-fit support: */
+
+@media (min-aspect-ratio: 16 / 9) {
+    #video > video {
+        height: 300%;
+        top: -100%;
+    }
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+    #video > video {
+        width: 300%;
+        left: -100%;
+    }
+}
+
+/* 2. If supporting object-fit, overriding (1): */
+
+@supports (object-fit: cover) {
+    #video > video {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }

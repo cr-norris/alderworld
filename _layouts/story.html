@@ -27,12 +27,12 @@ layout: default
                 <p><span class="orange">Collaborators:</span> {{ page.collaborators | join:', ' }}</p>
             </div>
         </div>
-    <i class="fas fa-circle col-xs-12 story-ending"></i>    
+    <i class="fas fa-square col-xs-12 story-ending"></i>    
     </a>
     <div class="row">
     {% for story in site.stories %}
     <a class="project row middle-xs" href="{{ story.url }}">
-        <div class="row start-xs col-xs-10">{{ story.title }}</div>
+        <div class="row start-xs col-xs-10 helvetica">{{ story.title }}</div>
         <div class="row end-xs col-xs-2"><i class="fa fa-arrow-right"></i></div>
     </a>
     {% endfor %}

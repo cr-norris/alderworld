@@ -17,10 +17,12 @@ title: Projects
     {% endfor %}
 </div>
 <div class="row half-row">
-    <div class="col-xs-12 col-sm-8 row start-xs">
-        <p>We often collaborate with other makers and thinkers, many of these projects wouldn’t have been possible without them. Many thanks to these humans:<p>
+    <div class="col-xs-12 col-sm-7 row start-xs">
+        <p>It takes a village. We've been fortunate to build an incredible network of collaborators, these projects wouldn’t have been possible without them. Awesome humans:<p>
         {% for collaborator in site.data.collaborators %}
-        <a href="{{ collaborator.website }}">{{ collaborator.name }},</a>
+        <a href="{{ collaborator.website }}">
+            {{ collaborator.name }},
+        </a>
         {% endfor %}
     </div>
 </div>
