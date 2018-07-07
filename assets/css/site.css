@@ -714,6 +714,12 @@ select:-webkit-autofill:focus {
 
 /* Projects */
 
+.collaborator {
+    font-size: 1em;
+    font-family: 'Anonymous Pro', monospace;
+
+}
+
 .collaborator:after {
     content: ',';
 }
