@@ -91,7 +91,6 @@ footer {
     background-color: #E85133;
     width: 100% !important;
     color: white;
-    font-size: .9em;
     position: relative;
     bottom: 0px;
     padding: 3em 0;
@@ -103,20 +102,15 @@ footer {
 
 footer a {
     color: white;
-    text-align: right;
-}
-
-footer a:first-child {
-    text-align: left;
-}
-
-footer a:last-child {
-    display: none;
-    text-align: center;
 }
 
 footer a:hover {
-    opacity: .8;
+    opacity: .3;
+}
+
+footer a.active {
+    opacity: .3;
+    color: white !important;
 }
 
 a {
@@ -333,13 +327,8 @@ h3 {
     display: inline-block;
 }
 
-
 #splash-footer a:hover {
     opacity: .8;
-}
-
-@media only screen and (max-width: 48em) {
-    #splash-footer {}
 }
 
 .logo-left {
@@ -347,8 +336,6 @@ h3 {
     -webkit-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
 }
-
-.logo-left:hover {}
 
 .logo-center {
     height: 4em;
@@ -476,7 +463,7 @@ h3 {
 .nav-links li {
     display: inline-block;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1em;
     font-weight: 600;
     z-index: 1;
