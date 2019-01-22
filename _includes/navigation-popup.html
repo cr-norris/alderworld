@@ -1,14 +1,14 @@
 <div class="outside">
-    <div class="inside row full-row top-xs">
-        <div class="col-xs-12 nav-trigger close">
-            <div class="menu-icon-close"><img src="/assets/icons/menu-icon-close.svg"></div>
-        </div>
-        <div class="col-xs-12 col-sm-12">
-            <div class="popupnav-links">
-                <a href="/projects/" class="popupnav-link">Projects</a>
-                <a href="/stories/" class="popupnav-link">Stories</a>
-                <a href="/studio/" class="popupnav-link">Studio</a>
-            </div>
-        </div>
+    <div class="inside">
+        <div class="mobile-nav">
+        <ul class="nav-links mobile">
+            {% for node in site.pages | sort:'order' %} {% unless node.exclude %} {% if page.url == node.url %}
+            <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+            {% else %}
+            <li class="active"><a href="{{node.url}}">{{node.title}}</a></li>
+            {% endif %} {% endunless %} {% endfor %}
+        </ul>
+        <i class="fas fa-2x fa-times nav-trigger close"></i>
+    </div>
     </div>
 </div>

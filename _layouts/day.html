@@ -1,7 +1,15 @@
---- 
+---
 layout: default
 ---
 
-<div class="wrapper day">
-    {{ content }}
-</div>
+<body>
+    {% include navigation-popup.html %}
+    <div id="container">
+        <div class="wrapper day">
+            {{ content }}
+        </div>
+    </div>
+    <footer>
+        {% include footer.html %}
+    </footer>
+</body>

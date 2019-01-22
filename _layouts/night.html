@@ -1,7 +1,15 @@
---- 
+---
 layout: default
 ---
 
-<div class="wrapper night">
-    {{ content }}
-</div>
+<body>
+    {% include navigation-popup.html %}
+    <div id="container" style="background-color: black;">
+        <div class="wrapper night">
+            {{ content }}
+        </div>
+    </div>
+    <footer>
+        {% include footer.html %}
+    </footer>
+</body>

@@ -1,4 +1,4 @@
---- 
+---
 layout: video
 title: Home
 video-mp4: /assets/video.mp4
@@ -9,11 +9,15 @@ video-webm: /assets/video.webm
     <a class="col-xs-12" href="/studio/">
         <img class="logo-center" src="/assets/images/logo/white.svg">
     </a>
-    <div id="splash-footer" class="row col-xs-12 bottom-xs between-xs">
-        <a href="/studio/" class="row start-xs col-xs-12 col-sm-3">©2018 Alder</a>
-        <a href="/studio/" class="row end-xs col-xs-12 col-sm-3">Studio</a>
-        <a href="/stories/" class="row end-xs col-xs-12 col-sm-3">Stories</a>
-        <a href="/projects/" class="row end-xs col-xs-12 col-sm-3 ">Projects</a>
-        <a class="row center-xs col-xs-12 nav-trigger close">Menu</a>
+    <div id="splash-footer" class="row col-xs-12 between-xs">
+        <a href="/">©2018 Alder</a>
+        <i id="mobile-nav-trigger" class="nav-trigger close end-xs fas fa-2x fa-plus"></i>
+        <ul class="nav-links">
+            {% for node in site.pages | sort:'order' %} {% unless node.exclude %} {% if page.url == node.url %}
+            <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+            {% else %}
+            <li class="active"><a href="{{node.url}}">{{node.title}}</a></li>
+            {% endif %} {% endunless %} {% endfor %}
+        </ul>
     </div>
 </div>

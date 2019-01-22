@@ -1,13 +1,10 @@
---- 
+---
 layout: default
 ---
-
 <div id="preloader">
     <div id="status"></div>
 </div>
-
 {% include navigation-story.html %}
-
 <div class="wrapper day">
     <div class="row slider">
         <div class="story-slider unslider">
@@ -31,26 +28,25 @@ layout: default
     <i class="fas fa-square col-xs-12 story-ending"></i>    
     </a>
     <div class="row">
-    {% for story in site.stories %}
-    <a class="project row middle-xs" href="{{ story.url }}">
+        {% for story in site.stories %}
+        <a class="project row middle-xs" href="{{ story.url }}">
         <div class="row start-xs col-xs-10 helvetica">{{ story.title }}</div>
         <div class="row end-xs col-xs-2"><i class="fa fa-arrow-right"></i></div>
     </a>
-    {% endfor %}
+        {% endfor %}
     </div>
-
 </div>
 <script>
-    $(document).ready(function() {
-        $('.story-slider').unslider({
-            nav: true,
-            infinite: true,
-            autoplay: false,
-            speed: 1000,
-            delay: 10000,
-            dots: true, //  Display dot navigation
-            fluid: true //  Support responsive design. May break non-responsive designs
-        });
-
+$(document).ready(function() {
+    $('.story-slider').unslider({
+        nav: true,
+        infinite: true,
+        autoplay: false,
+        speed: 1000,
+        delay: 10000,
+        dots: true, //  Display dot navigation
+        fluid: true //  Support responsive design. May break non-responsive designs
     });
+
+});
 </script>
