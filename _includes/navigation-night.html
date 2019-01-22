@@ -1,9 +1,9 @@
 <div class="navigation row middle-xs between-xs">
     <div class="col-xs-4 col-sm-3">
-        <a href="/"><img class="logo-left" src="/assets/images/logo/white.svg"></a>
+        <a href="/"><img class="logo-left" src="/assets/images/logo/black.svg"></a>
     </div>
     <div class="col-xs-8">
-		<i id="mobile-nav-trigger" class="nav-trigger close end-xs fas fa-2x fa-plus"></i>
+        <i id="mobile-nav-trigger" class="nav-trigger close end-xs fas fa-2x fa-plus"></i>
         <ul class="row end-xs nav-links night">
             {% for node in site.pages | sort:'order' %} {% unless node.exclude %} {% if page.url == node.url %}
             <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>

@@ -1,13 +1,13 @@
 <div class="row col-xs-12 between-xs">
-	<a href="/">©2018 Alder</a>
-    <i id="mobile-nav-trigger" class="nav-trigger close end-xs fas fa-2x fa-plus"></i>
-    <ul class="nav-links">
-        {% for node in site.pages | sort:'order' %} {% unless node.exclude %} {% if page.url == node.url %}
-        <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
-        {% else %}
-        <li class="active"><a href="{{node.url}}">{{node.title}}</a></li>
-        {% endif %} {% endunless %} {% endfor %}
-    </ul>
+        <a href="/">©2018 Alder</a>
+        <i id="mobile-nav-trigger" class="nav-trigger close end-xs fas fa-2x fa-plus"></i>
+        <ul class="nav-links">
+            {% for node in site.pages | sort:'order' %} {% unless node.exclude %} {% if page.url == node.url %}
+            <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+            {% else %}
+            <li class="active"><a href="{{node.url}}">{{node.title}}</a></li>
+            {% endif %} {% endunless %} {% endfor %}
+        </ul>
 </div>
 <script src="{{ site.baseurl }}assets/scripts/scripts.js" type="text/javascript"></script>
 <script src="/assets/scripts/jquery.awesome-cursor.min.js" type="text/javascript"></script>

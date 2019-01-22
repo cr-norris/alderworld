@@ -119,20 +119,6 @@ footer a:hover {
     opacity: .8;
 }
 
-@media only screen and (max-width: 48em) {
-
-    footer a:nth-child(1),
-    footer a:nth-child(2),
-    footer a:nth-child(3),
-    footer a:nth-child(4) {
-        display: none;
-    }
-
-    footer a:last-child {
-        display: block;
-    }
-}
-
 a {
     text-decoration: none;
 }
