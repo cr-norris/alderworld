@@ -437,7 +437,7 @@ h3 {
 }
 
 .mobile li a:hover {
-    border-bottom: 3px solid #f1f1f1;
+    color: #E85133;
 }
 
 .mobile li.row {
@@ -449,7 +449,7 @@ h3 {
 }
 
 .night li a:hover {
-    border-bottom: 2px solid white;
+    color: #E85133;
 }
 
 .day li a {
@@ -457,7 +457,7 @@ h3 {
 }
 
 .day li a:hover {
-    border-bottom: 2px solid black;
+    color: #E85133;
 }
 
 .nav-links li {
