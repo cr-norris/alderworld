@@ -204,7 +204,7 @@ hr {
 
 @media only screen and (max-width: 768px) {
     h1 {
-        font-size: 2em;
+        font-size: 2.2em !important;
     }
     .headline-night {
         font-size: 2em;
