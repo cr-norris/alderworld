@@ -13,7 +13,7 @@ nav.unslider-nav {
     font-size: 1.4em;
     padding: 1em;
     right: 0;
-    color: #E85133;
+    color: #ffb600;
     z-index: 99;
 }
 
@@ -36,6 +36,6 @@ nav.unslider-nav {
 }
 
 .unslider-nav ol li.unslider-active {
-  background: #E85133;
+  background: #ffb600;
   cursor: crosshair;    
 }
