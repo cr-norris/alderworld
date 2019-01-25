@@ -12,7 +12,8 @@ video-webm: /assets/video.webm
         <a href="/">©2018 Alder</a>
         <i id="mobile-nav-trigger" class="nav-trigger close end-xs fas fa-2x fa-plus"></i>
         <ul class="nav-links">
-            {% for node in site.pages | sort:'order' %} {% unless node.exclude %} {% if page.url == node.url %}
+            {% assign sorted_pages = site.pages | sort:'order' %}
+            {% for node in sorted_pages %} {% unless node.exclude %} {% if page.url == node.url %}
             <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
             {% else %}
             <li class="active"><a href="{{node.url}}">{{node.title}}</a></li>

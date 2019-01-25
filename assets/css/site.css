@@ -195,7 +195,6 @@ hr {
     }
 }
 
-
 .banner {
     min-height: 50vh;
 }
@@ -258,6 +257,10 @@ h3 {
 .meta a {
     color: black;
     opacity: 1 !important;
+}
+
+.client-list {
+    padding: 2em 0;
 }
 
 .headline-night {
