@@ -5,7 +5,7 @@
     <div class="col-xs-8">
         <i id="mobile-nav-trigger" class="nav-trigger close end-xs fas fa-2x fa-plus"></i>
         <ul class="row end-xs nav-links night">
-            {% for node in site.pages | sort:'order' %} {% unless node.exclude %} {% if page.url == node.url %}
+            {% for node in site.pages %} {% unless node.exclude %} {% if page.url == node.url %}
             <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
             {% else %}
             <li class="active"><a href="{{node.url}}">{{node.title}}</a></li>
