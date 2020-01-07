@@ -29,7 +29,7 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-feed (0.9.3)
       jekyll (~> 3.3)
-    jekyll-paginate-v2 (2.1.0)
+    jekyll-paginate-v2 (2.0.0)
       jekyll (~> 3.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
@@ -70,9 +70,9 @@ DEPENDENCIES
   ffi (>= 1.9.24)
   jekyll (~> 3.8.5)
   jekyll-feed (~> 0.6)
-  jekyll-paginate-v2
+  jekyll-paginate-v2 (~> 2.0.0)
   minima (~> 2.0)
   tzinfo-data
 
 BUNDLED WITH
-   1.17.2
+   1.17.3
